@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang=en>
+	
+<head>
+  	<title>Cape Verde</title>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  		<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width", initial-scale="1.0">
+		<!--for map-->
+		<meta charset='utf-8' />
+    	<title></title>
+    	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.27.0/mapbox-gl.js'></script>
+    	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.27.0/mapbox-gl.css' rel='stylesheet' />
+    	<style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    	</style>
+    	<!--for map end-->
+</head>
+
+<!--content for navbar-->
+<div class="container">
+<div class="jumbotron">
+<div class="container text-center">
+<nav class="navbar navbar-default">
+
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#HelloCV">Hello Cape Verde</a>
+	</div>
+
+
+	<!--content for toggling-->
+
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li><a href="#VisaInfo">Visa Information<span class="sr-only"></span></a></li>
+			<li><a href="#Money">Money and Costs</a></li>
+			<li><a href="#HandS">Health and Safety</a></li>
+		</ul> 	
+	
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#Contactus">Contact us</a></li>
+					<li><a href="#">Location</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="https://www.capeverde.co.uk/hotels/">Book stay in Cape Verde</a></li>
+					<li><a href="http://www.thomson.co.uk/flight/cape-verde-flights">Book flights to Cape Verde</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+</nav>
+</div> 
+</div> <!--end navbar-->
+
+
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+		<div class="row">
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+	</ol>
+
+	<div class="carousel-inner" role="listbox"> 
+		<div class="item active"> 
+		<img src="images/capeverdebeach.jpg" alt="Beach" width="1600" height="1000">
+			<div class="carousel-caption">
+			<h1>Cape Verde</h1>
+			<p>is magnificent sandy beaches</p>
+			</div>
+	</div>
+
+	<div class="item">
+		<img src="images/buracona.jpg" alt="Buracona" width="1600" height="1000">
+			<div class="carousel-caption">
+			<h1>Cape Verde</h1>
+			<p>is lush mountain ridges</p>
+			</div>
+	</div>
+
+	<div class="item">
+		<img src="images/kitebeach.jpg" alt="Kite Beach" width="1600" height="1000">
+			<div class="carousel-caption">
+			<h1>Cape Verde</h1>
+			<p>is thrilling watersports</p>
+			</div>
+	</div>
+
+	<div class="item">
+		<img src="images/volcanofogo.jpg" alt="Fogo" width="1600" height="1000">
+			<div class="carousel-caption">
+			<h1>Cape Verde</h1>
+			<p>is volcanic backdrops</p>
+			</div>
+	</div>	
+	</div>
+ 
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> 
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+
+</div> <!-- closes row-->
+</div> <!-- closes jumbotron-->
+</div> <!-- closes container-->
+
+<!--options menu-->
+
+
+
+<div class="container">
+	<div class="jumbotron">
+	<div class="container text-center">
+		<div class="row">
+		<div class="col-md-4">
+		<img class="img-circle" src="images/passport-visa.jpg" href="#VisaInfo"alt="visa" height="160" width="160"> 
+			<h3><a href="#VisaInfo">Visa Information</a></h3>
+			<small>Dull but essential passport paperwork and entry info</small>
+		</div>
+
+		<div class="col-md-4">
+			<img class="img-circle" src="images/euro-money.jpg" href="#Money" alt="euro" height="160" width="160">
+			<h3><a href="#Money">Money and Costs</a></h3>
+			<small>Budgets, currency rates and on the ground costs</small>
+		</div>
+			<div class="col-md-4">
+			<img class="img-circle" src="images/health-safety.jpg" href="#HandS" alt="euro" height="160" width="160">
+			<h3><a href="#HandS">Health and Safety</a></h3>
+			<small>Tips for a flawless journey</small>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="jumbotron">
+		<div class="container text-center">
+		<div class="row">
+		<div class="col-md-12">
+			<h2 id="HelloCV">Welcome to Cape Verde</h2>
+			<small>Savvy travellers have been booking holidays to Cape Verde for a while now. And when you see its beaches and lunar-like landscapes, you’ll understand why. Cape Verde is made up of 10 isles floating in Atlantic Ocean, 500 kilometres off the coast of Senegal. They’re still fairly new to the travel circuit, but with their out-of-this-world beaches and lively surf, they’re quickly making a name for themselves.</small>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--add video here if time-->
+
+<a name="VisaInfo"></a>
+<div class="container-fluid">
+	<div class="jumbotron">
+		<div class="container text-center">
+		<div class="row">
+		<div class="col-md-12">
+			<h2 id="VisaInfo">Visa Information</h2>
+			<small>British citizens must have a valid passport to visit Cape Verde. You also need a visa, which is included in your holiday package unless you’ve only booked a flight or you’re booking within seven days of travelling. You’ll need to apply for your visa at least a week before you travel, so we can get it ready for your arrival in Cape Verde. If you don’t, you’ll have to pay for a visa when you get there. For the most up-to-date passport and visa info, visit <a href="https://www.gov.uk/foreign-travel-advice/cape-verde">https://www.gov.uk/foreign-travel-advice/cape-verde</a>.</small>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<a name="Money"></a>
+<div class="container-fluid">
+	<div class="jumbotron">
+		<div class="container text-center">
+		<div class="row">
+		<div class="col-md-12">
+			<h2 id="Money">Money and Costs</h2>
+			<small>The unit of currency is the Cape Verde escudo (CVE), divided into 100 centavos. Though not a hard currency, it's stable; in January 2002 it was pegged to the euro. Most businesses also accept euros.
+
+			Banks are found in all the main towns and even some of the smaller ones; most have ATMs that accept bankcards and Visa (daily withdrawal limit is CVE20,000).
+
+			Many banks change travellers cheques and cash in all the main currencies (except the West African CFA franc).
+
+			Credit cards are not widely accepted; Visa is the most widespread. Even where accepted, there's typically a 3% to 5% commission for credit card payments.</small>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<a name="HandS"></a>
+<div class="container-fluid">
+	<div class="jumbotron">
+		<div class="container text-center">
+		<div class="row">
+		<div class="col-md-12">
+			<h2 id="HandS">Health and Safety</h2>
+			<div class="col-md-6">
+				<h4>Health Information</h4>
+				<small>All travellers should be up to date on routine vaccinations while traveling to any destination. Some vaccines may also be required for travel.
+
+				Make sure you are up-to-date on routine vaccines before every trip. These vaccines include measles-mumps-rubella (MMR) vaccine, diphtheria-tetanus-pertussis vaccine, varicella (chickenpox) vaccine, polio vaccine, and your yearly flu shot.</small>
+			</div>
+
+			<div class="col-md-6">
+				<h4>Safety Information</h4>
+				<small>Violent crime is on the rise in Praia, where it's highly advisable to take taxis at night, no matter where and how far you're going. Take caution in Mindelo, too, where pickpocketing and muggings are not uncommon.
+
+				Some hiking trails have become sites of banditry in recent years, as on Boa Vista and around Tarrafal on Santiago; always ask locals before you set out.
+
+				The rest of the country is very safe, though petty crime like pickpocketing is always a possibility.</small>
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<!--form-->
+
+<div class="jumbotron">
+<div class="container">
+<div class="col-md-12">
+<a name="Contactus"></a>
+<h4 class="text-center">Contact us to find out more!</h4>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <div class="col-sm-10"> 
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label><input type="checkbox">Remember me</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
